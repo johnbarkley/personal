@@ -10,6 +10,7 @@ import Link from './components/Link'
 import throwwImg from './assets/throww.png'
 import conocImg from './assets/conoc.png'
 import mockuppImg from './assets/mockupp.png'
+import taskManagerImg from './assets/taskManager.png'
 import resume from './assets/JohnBarkleyResume.pdf'
 
 class App extends Component {
@@ -50,6 +51,15 @@ class App extends Component {
                     bgColor='2A70D9'>
                         <p>A tool for managing sources of inspiration for web development projects.</p>
                         <p>I’m currently building Throww and hoping to launch this fall. Click for more details on the concept, the design, and the current stage of development.</p>
+                    </Project>
+
+                    <Project
+                    name='Task manager tool design'
+                    link='https://github.com/johnbarkley/task-manager'
+                    src={taskManagerImg}
+                    bgColor='5280FF'>
+                        <p>A design I made for a collaborative task manager tool.</p>
+                        <p>Click for more images of the design as well as explanations behind the design & UI decisions.</p>
                     </Project>
 
                     <Project
