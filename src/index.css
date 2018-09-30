@@ -160,3 +160,80 @@ a {
 .link a:hover {
     color: #0F7EFF;
 }
+
+.page {
+    width: 100vw;
+}
+.page-hero {
+    width: 100%;
+    height: 59vw;
+    text-align: center;
+}
+.page-hero img {
+    width: 75%;
+}
+.page-hero h1 {
+    font-size: 44px;
+    font-weight: 500;
+    padding: 65px 0 30px 0;
+    margin: 0;
+    color: #fff;
+}
+.page-hero .page-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0 0 0;
+}
+.page-hero .page-links a {
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 300;
+    margin: 0 10px;
+}
+.page-hero .page-links a:hover {
+    text-decoration: underline;
+}
+.page-body {
+    width: 63.5%;
+    margin: 7.64vw auto;
+}
+.project-page-title {
+    font-size: 28px;
+    font-weight: 500;
+    color: #191545;
+    margin: 50px 0 30px 0;
+}
+.page-body ul {
+    margin: 20px 0 20px 30px;
+    padding: 0;
+}
+.page-body ul li {
+    font-size: 17px;
+    color: #191545;
+    font-weight: 400;
+    margin: 10px 0;
+    padding: 0;
+    line-height: 1.6em;
+}
+.page-body ul li a {
+    color: #191545;
+    text-decoration: underline;
+}
+#indented {
+    margin-left: 40px;
+}
+#indented-double {
+    margin-left: 80px;
+}
+.page-body img {
+    width: 100%;
+    margin: 20px 0;
+}
+#bold-num {
+    font-weight: 600;
+}

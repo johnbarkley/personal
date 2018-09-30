@@ -19,6 +19,8 @@ const Project = props => {
                 <ProjectTitle
                 name={props.name}
                 link={props.link} />
+
+
                 <ProjectBody>
                     {props.children}
                 </ProjectBody>
@@ -28,7 +30,8 @@ const Project = props => {
                     <ProjectImage
                     src={props.src}
                     bgColor={props.bgColor}
-                    link={props.link} />
+                    link={props.link}
+                    name={props.name} />
                 )
             }
         </div>

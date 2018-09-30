@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './App.css'
 import SectionHeader from './components/SectionHeader'
 import TextBlock from './components/TextBlock'
 import CurrentSection from './components/CurrentSection'
@@ -7,18 +6,15 @@ import CurrentItem from './components/CurrentItem'
 import Project from './components/Project'
 import Link from './components/Link'
 
-import throwwImg from './assets/throww.png'
-import conocImg from './assets/conoc.png'
-import mockuppImg from './assets/mockupp.png'
-import taskManagerImg from './assets/taskManager.png'
 import resume from './assets/JohnBarkleyResume.pdf'
 
 class App extends Component {
     render() {
         return (
             <div className='container'>
+
                 <div className='intro'>
-                    <SectionHeader value={'Hey, I\'m John'} />
+                    <SectionHeader value={'Hey, I’m John'} />
 
                     <TextBlock>
                         <p id='first-paragraph'>I like to design & develop websites and web applications. I particularly enjoy front-end development as well as working on productivity and project management-type tools. I’m also interested in exploring UI/UX and design systems.</p>
@@ -26,7 +22,7 @@ class App extends Component {
                     </TextBlock>
 
                     <CurrentSection header='Currently...'>
-                        <CurrentItem emoji='📚' activity='learning React' />
+                        <CurrentItem emoji='📚' activity='learning React (this site is a React SPA!)' />
                         <CurrentItem emoji='🇪🇸' activity='studying in Sevilla, Spain (fall 2018)' />
                         <CurrentItem emoji='👷' activity='building Throww, a tool for managing sources of inspiration for web projects' />
                     </CurrentSection>
@@ -36,36 +32,25 @@ class App extends Component {
                     <SectionHeader value={'Projects'} nontop />
 
                     <Project
-                    name='Mockupp'
-                    link='https://johnbarkley.github.io/mockupp'
-                    src={mockuppImg}
-                    bgColor='690EFF'>
+                    {...this.props.mockuppProps}>
                         <p>A tool for creating browser-style mockups for presentations and portfolios.</p>
                         <p>Mockupp is a single-page application built in React. The project mockups for this site were all created with Mockupp.</p>
                     </Project>
 
                     <Project
-                    name='Throww'
-                    link='https://github.com/johnbarkley/throww'
-                    src={throwwImg}
-                    bgColor='2A70D9'>
+                    {...this.props.throwwProps}>
                         <p>A tool for managing sources of inspiration for web development projects.</p>
                         <p>I’m currently building Throww and hoping to launch this fall. Click for more details on the concept, the design, and the current stage of development.</p>
                     </Project>
 
                     <Project
-                    name='Task manager tool design'
-                    link='https://github.com/johnbarkley/task-manager'
-                    src={taskManagerImg}
-                    bgColor='5280FF'>
+                    {...this.props.taskManagerProps}>
                         <p>A design I made for a collaborative task manager tool.</p>
                         <p>Click for more images of the design as well as explanations behind the design & UI decisions.</p>
                     </Project>
 
                     <Project
-                    name='Until the Stars are Dead site'
-                    src={conocImg}
-                    bgColor='FFFFF5'>
+                    {...this.props.untilStarsProps}>
                         <p>A site I’m currently building for the release of my sister’s first novel, tentatively titled "Until the Stars are Dead."</p>
                         <p>I’m early on in the design process but you can see the landing page opposite.</p>
                     </Project>
