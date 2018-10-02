@@ -7,7 +7,7 @@ body {
 }
 .container {
     width: 68%;
-    margin: 130px auto 0 auto;
+    margin: 9vw auto 0 auto;
 }
 .intro {
     width: 72%;
@@ -39,7 +39,7 @@ body {
     font-size: 17px;
     color: #0F7EFF;
     font-weight: 600;
-    padding: 20px 0 15px 20px;
+    padding: 1.17em 0 .88em 1.17em;
     margin: 0;
 }
 .current-section ul {
@@ -74,7 +74,7 @@ body {
 .project-text {
     width: 25%;
     display: inline-block;
-    margin-bottom: 100px;
+    margin: 0;
     vertical-align: top;
 }
 .project-text a, .project-text-no-image a {
@@ -99,10 +99,10 @@ body {
     color: #191545;
     font-weight: 400;
     line-height: 1.6em;
-    margin: 30px 0 0 0;
+    margin: 1vw 0 0 0;
     display: inline-block;
 }
-.project-body p, a {
+.project-body p {
     display: inline-block;
 }
 .project-body a {
@@ -127,7 +127,7 @@ a {
 .project-image {
     width: 70%;
     margin-left: 4.8%;
-    height: 430px;
+    height: 30vw;
     display: inline-block;
     text-align: center;
 }
@@ -142,17 +142,14 @@ a {
     transition: transform .5s ease;
     vertical-align: middle;
 }
-.project-image img:hover {
-    transform: scale(1.1);
-}
 .contact {
     width: 100%;
-    padding: 0 0 100px 0;
+    padding: 0 0 8vw 0;
 }
 .link a {
     text-decoration: none;
     color: #191545;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     margin: 0;
     padding: 0;
@@ -175,7 +172,7 @@ a {
 .page-hero h1 {
     font-size: 44px;
     font-weight: 500;
-    padding: 65px 0 30px 0;
+    padding: 4.5vw 0 2.1vw 0;
     margin: 0;
     color: #fff;
 }
@@ -187,7 +184,7 @@ a {
     margin: 0px 0 0 0;
 }
 .page-hero .page-links a {
-    font-size: 18px;
+    font-size: 17px;
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -206,7 +203,7 @@ a {
     font-size: 28px;
     font-weight: 500;
     color: #191545;
-    margin: 50px 0 30px 0;
+    margin: 3.5vw 0 2.1vw 0;
 }
 .page-body ul {
     margin: 20px 0 20px 30px;
@@ -216,7 +213,7 @@ a {
     font-size: 17px;
     color: #191545;
     font-weight: 400;
-    margin: 10px 0;
+    margin: .5em 0;
     padding: 0;
     line-height: 1.6em;
 }
@@ -236,4 +233,95 @@ a {
 }
 #bold-num {
     font-weight: 600;
+}
+
+@media (min-width: 1025px) {
+    .project-image img:hover {
+        transform: scale(1.1);
+    }
+}
+@media screen and (max-width: 1200px) {
+    .intro {
+        width: 85%;
+    }
+    .current-item {
+        line-height: 25px;
+    }
+    .current-section h6, .text-block, .project-body, .current-item .activity, .link a, .page-body ul li {
+        font-size: 15px;
+    }
+    .current-item .emoji {
+        font-size: 19px;
+    }
+    .section-header, .page-hero h1 {
+        font-size: 36px;
+    }
+    .project-title-link, .project-title-no-link, .project-page-title {
+        font-size: 22px;
+    }
+    .project-body p {
+        margin: 0;
+        padding: 5px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .intro {
+        width: 100%;
+    }
+    .project-image {
+        display: block;
+        width: 100%;
+        height: 38.5vw;
+        margin: 20px 0 0 0;
+    }
+    .project-text {
+        display: block;
+        width: 100%;
+    }
+    .project {
+        margin-bottom: 50px;
+    }
+    .project-body p {
+        padding: 10px 0 0 0;
+    }
+    .section-header {
+        font-size: 30px;
+    }
+    .project-title-link, .project-title-no-link, .project-page-title {
+        font-size: 18px;
+    }
+    .current-section h6, .text-block, .project-body, .current-item .activity, .link a, .page-body ul li, .page-hero .page-links a {
+        font-size: 14px;
+    }
+    .current-item {
+        line-height: 21px;
+    }
+    .current-item .activity {
+        padding-left: 0px;
+    }
+    .current-item .emoji {
+        font-size: 16px;
+    }
+    .non-top {
+        margin-top: 30px;
+    }
+    .page-hero {
+        height: 54vw;
+    }
+    .page-hero h1 {
+        font-size: 26px;
+    }
+    .page-hero img {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .page-hero {
+        height: 60vw;
+    }
+    .page-hero h1 {
+        font-size: 22px;
+    }
 }

@@ -52,7 +52,7 @@ class App extends Component {
                     <Project
                     {...this.props.untilStarsProps}>
                         <p>A site I’m currently building for the release of my sister’s first novel, tentatively titled "Until the Stars are Dead."</p>
-                        <p>I’m early on in the design process but you can see the landing page opposite.</p>
+                        <p>I’m early on in the design process but and will be adding updates soon.</p>
                     </Project>
 
                     <Project

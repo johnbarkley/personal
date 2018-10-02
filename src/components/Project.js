@@ -4,9 +4,9 @@ import ProjectBody from './ProjectBody'
 import ProjectImage from './ProjectImage'
 
 const Project = props => {
-    let mTop = 80
+    let mTop = '5.5vw'
     if(props.name === 'Mockupp' || props.name === 'Macsha') {
-        mTop = 40
+        mTop = '3vw'
     }
 
     const macsha = props.name === 'Macsha'
