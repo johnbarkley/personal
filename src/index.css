@@ -28,6 +28,9 @@ body {
     line-height: 1.6em;
     margin: 20px 0 0 0;
 }
+.text-block a {
+    color: #191545;
+}
 .current-section {
     width: 100%;
     background-color: #fff;
@@ -204,6 +207,11 @@ a {
     font-weight: 500;
     color: #191545;
     margin: 3.5vw 0 2.1vw 0;
+}
+.page-body .figma {
+    width: 100%;
+    height: 800px;
+    border: none;
 }
 .page-body ul {
     margin: 20px 0 20px 30px;

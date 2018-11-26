@@ -9,6 +9,9 @@ const ProjectTitle = props => {
     else if (dest === 'Until the Stars are Dead site') {
         dest = 'Until-the-stars-are-dead-site'
     }
+    else if (dest === 'edX redesign') {
+        dest = 'edX-redesign'
+    }
 
     if(dest !== 'Macsha') {
         return (

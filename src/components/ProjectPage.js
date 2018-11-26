@@ -7,6 +7,8 @@ import tasksInterface from '../assets/tasksInterface.png'
 import tasksZoom from '../assets/tasksZoom.png'
 import taskNotJoined from '../assets/taskNotJoined.png'
 import taskJoined from '../assets/taskJoined.png'
+import edXog1 from '../assets/edXoriginal1.png'
+import edXog2 from '../assets/edXoriginal2.png'
 
 const ProjectPage = props => {
     const imageCenter = {
@@ -195,6 +197,69 @@ const ProjectPage = props => {
                         <TextBlock>
                             <p>I’m currently building this site using React for the release of my sister’s first novel, tentatively titled "Until the Stars are Dead."</p>
                             <p>I’m early on in the design process and will add updates as I go along.</p>
+                        </TextBlock>
+                    </div>
+                </div>
+            )
+            break
+        case 'edX redesign':
+            content = (
+                <div className='page'>
+                    <div
+                    className='page-hero'
+                    style={{backgroundColor: '#' + props.bgColor}}>
+                        <h1>{props.name}</h1>
+                        <div className='page-links'>
+                            <a href={props.link}
+                            target='_blank'
+                            rel='noopener noreferrer'>Figma</a>
+                        </div>
+                        <img src={props.src} alt='hero pic' />
+                    </div>
+
+                    <div
+                    className='page-body'>
+                        <h6 className='project-page-title'>My redesign</h6>
+                        <TextBlock>
+                            <p>The Figma file is embedded below, and you can also open it in a new tab and view it in full screen <a href={props.link} target='_blank' rel='noopener noreferrer'>here.</a></p>
+                        </TextBlock>
+
+                        <iframe
+                        className='figma'
+                        src={props.figma}
+                        title='figma'>
+                        </iframe>
+
+                        <h6 className='project-page-title'>Original design</h6>
+                        <TextBlock>
+                            <p>The following are two screenshots from the current edX design, which you can view live <a href='https://www.edx.org/course/subject/architecture' target='_blank' rel='noopener noreferrer'>here.</a></p>
+                        </TextBlock>
+                        <img src={edXog1} alt='original 1' />
+                        <img src={edXog2} alt='original 2' />
+
+                        <h6 className='project-page-title'>Design choices</h6>
+                        <TextBlock>
+                            <p>This was a relatively quick project, and is a slightly abbreviated version of edX's course listing page. However, I also made some deliberate choices to leave out features that they have included in their current design.</p>
+                            <p>The main feeling I got in scrolling through the current site was that it was just very crowded and busy, so I focused on remedying this in my redesign. To do so, I made the following design choices:</p>
+                            <ul>
+                                <li>Spaced out the navbar by moving items to the edges and decreasing font size.</li>
+                                <li>Removed the hero image between the title and gave it more space above and below. I think a hero image could be implemented in an attractive way but there are already a lot of images below with the course thumbnails and I really wanted there to be more whitespace on the screen.</li>
+                                <li>Removed the two large "View all edX Courses" buttons as well as the additional search bar at the end of the results.</li>
+                                <li>I also removed the description text "EdX offers free online architecture..." from the initial view, and would plan to display it under a "More info"-type toggle button in the header section.</li>
+                                <li>I also like the idea of the navigation text ("Home > All Subjects > Architecture"), especially when you click on a course to allow for really well-structured navigation but didn't implement it in this design.</li>
+                                <li>Made each course card a bit smaller and spread them out more so they don't feel so cramped.</li>
+                                <li>Toned down the 'verified' tag because it took up quite a bit of space on the card and in going through edX's courses it seems like the vast majority are verified, so it's not differentiating a lot as it is anyways. My version of the tag might even be a bit too much, and could be toned down with a darker green, or just changed to a check mark instead of the full word.</li>
+                                <li>I wanted to make the hover state a bit cleaner, so I defined it as the blue highlight of the course title and the underline (you can see it on result 2). I think it could be a bit stronger, though.</li>
+                                <li>Removed the 'Explore other edX subject areas' and 'Explore in other ways' links after the courses. It felt like a lot to squeeze in above the footer and would be better solved by a 'Back to top' button. I also think a fixed navbar could work, especially because courses continue to load as you scroll and with subjects with more courses than architecture you end up with a really long page.</li>
+                                <li>With the footer, I wanted to give the different elements and lists more space, so I made it taller and also picked the white on black to create a strong contrast that I felt helped bring some more clarity to it as well.</li>
+                            </ul>
+                            <p>A few other notes:</p>
+                            <ul>
+                                <li>The hover state is shown on result 2, with the blue highlight of the course title and the underline.</li>
+                                <li>I made up the "NEW" tag just as an idea, but there are others that could function as well in place of "VERIFIED", like Professional Certificate Program/XSeries Program for example.</li>
+                                <li>I picked GT America as the font and thought it turned out really well with this design!</li>
+                            </ul>
+                            <p>I enjoyed designing this page so I might give it a go building it out as well!</p>
                         </TextBlock>
                     </div>
                 </div>

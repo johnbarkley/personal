@@ -44,16 +44,22 @@ class App extends Component {
                     </Project>
 
                     <Project
+                    {...this.props.edXProps}>
+                        <p>A redesign of the course listing page from edX's site that I made just for fun.</p>
+                        <p>Click for more shots from my design and the Figma, as well as explanations behind the design & UI decisions.</p>
+                    </Project>
+
+                    <Project
                     {...this.props.taskManagerProps}>
                         <p>A design I made for a collaborative task manager tool.</p>
                         <p>Click for more images of the design as well as explanations behind the design & UI decisions.</p>
                     </Project>
 
-                    <Project
+                    {/*<Project
                     {...this.props.untilStarsProps}>
                         <p>A site I’m currently building for the release of my sister’s first novel, tentatively titled "Until the Stars are Dead."</p>
                         <p>I’m early on in the design process but and will be adding updates soon.</p>
-                    </Project>
+                    </Project>*/}
 
                     <Project
                     name='Macsha'>
