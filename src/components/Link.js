@@ -2,7 +2,7 @@ import React from 'react'
 
 const Link = props => {
     let mTop = 15
-    if(props.value === 'jgb2eb@virginia.edu') {
+    if(props.value === 'Email') {
         mTop = 20
     }
 
@@ -10,7 +10,7 @@ const Link = props => {
         <div
         className='link'
         style={{ marginTop: mTop }}>
-            <a href={props.dest} target='_blank'>{props.value}</a>
+            <a href={props.dest} target='_blank' rel='noopener noreferrer'>{props.value}</a>
         </div>
     )
 }

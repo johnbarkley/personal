@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import SectionHeader from './components/SectionHeader'
 import TextBlock from './components/TextBlock'
 import CurrentSection from './components/CurrentSection'
-import CurrentItem from './components/CurrentItem'
+// import CurrentItem from './components/CurrentItem'
 import Project from './components/Project'
 import Link from './components/Link'
 
@@ -21,11 +21,7 @@ class App extends Component {
                         <p>I’m in my third year studying computer science and Spanish at the University of Virginia.</p>
                     </TextBlock>
 
-                    <CurrentSection header='Currently...'>
-                        <CurrentItem emoji='📚' activity='learning React (this site is a React SPA!)' />
-                        <CurrentItem emoji='🇪🇸' activity='studying in Sevilla, Spain (fall 2018)' />
-                        <CurrentItem emoji='👷' activity='building Throww, a tool for managing sources of inspiration for web projects' />
-                    </CurrentSection>
+                    <CurrentSection />
                 </div>
 
                 <div className='all-projects'>
@@ -80,10 +76,10 @@ class App extends Component {
                 <div className='contact'>
                     <SectionHeader value={'Get in touch'} nontop />
 
-                    <Link dest='mailto:jgb2eb@virginia.edu' value='jgb2eb@virginia.edu' />
-                    <Link dest='https://github.com/johnbarkley' value='GitHub' newTab />
-                    <Link dest='https://linkedin.com/in/john-barkley19' value='LinkedIn' newTab />
-                    <Link dest={resume} value='Resume' newTab />
+                    <Link dest='mailto:johnbarkley19@gmail.com' value='Email' />
+                    <Link dest='https://github.com/johnbarkley' value='GitHub' />
+                    <Link dest='https://linkedin.com/in/john-barkley19' value='LinkedIn' />
+                    <Link dest={resume} value='Resume' />
                 </div>
             </div>
         )
