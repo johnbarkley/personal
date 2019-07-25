@@ -9,6 +9,7 @@ import taskNotJoined from '../assets/taskNotJoined.png'
 import taskJoined from '../assets/taskJoined.png'
 import edXog1 from '../assets/edXoriginal1.png'
 import edXog2 from '../assets/edXoriginal2.png'
+// import backArrow from '../assets/arrow-left.svg'
 
 const ProjectPage = props => {
     const imageCenter = {
@@ -25,6 +26,7 @@ const ProjectPage = props => {
                     <div
                     className='page-hero'
                     style={{backgroundColor: '#' + props.bgColor}}>
+                        {/*<img src={backArrow} class='back-arrow' alt='back arrow'/>*/}
                         <h1>{props.name}</h1>
                         <div className='page-links'>
                             <a href='https://johnbarkley.github.io/mockupp'
@@ -108,7 +110,7 @@ const ProjectPage = props => {
 
                         <h6 className='project-page-title'>Development</h6>
                         <TextBlock>
-                            <p>I’m currently designing the project and board interfaces and have done some preliminary/static development in React. I hope to launch towards the end of this fall.</p>
+                            <p>I’ve worked on defining features, designing the project and board interfaces, and have done some preliminary/static development in React.</p>
                             <p>Current plan for features/items that can be 'thrown' are:</p>
                         </TextBlock>
                         <ul>
@@ -144,7 +146,7 @@ const ProjectPage = props => {
                     className='page-body'>
                         <h6 className='project-page-title'>Concept</h6>
                         <TextBlock>
-                            <p>In my internship this past summer, although I worked on a team of only a few people, I realized the importance of communication and coordination between team members. I also began to appreciate the value of a task manager to facilitate the development process of a larger project. In the office, we used a white board and sticky notes, and for my own work I kept a text file with a list of my various tasks. Although this system was functional, I felt like it could be improved upon with a better tool.</p>
+                            <p>In my internship last summer, although I worked on a team of only a few people, I realized the importance of communication and coordination between team members. I also began to appreciate the value of a task manager to facilitate the development process of a larger project. In the office, we used a white board and sticky notes, and for my own work I kept a text file with a list of my various tasks. Although this system was functional, I felt like it could be improved upon with a better tool.</p>
                             <p>Of course, there are a multitude of sophisticated project management tools available as well as simpler to-do list-type applications, but I wanted to give my own design a shot to see what I could come up with.</p>
                             <p>The task manager I designed is meant to serve as a collaborative planning & management tool for a team working on the same product or project. My two main focuses were <span id='bold-num'>(1)</span> developing a hierarchical structure that is easy to rearrange and manipulate and <span id='bold-num'>(2)</span> emphasizing the collaborative nature and features of the tool.</p>
                         </TextBlock>
@@ -172,7 +174,7 @@ const ProjectPage = props => {
                         <h6 className='project-page-title'>Other features, explained</h6>
                         <ul>
                             <li>Deadline in blue - central part of a task so wanted it to stand out from the other information on a task bar. Changing this color to red on the day of the deadline, or within a certain hour threshold would be a good addition to further make the deadline stand out.</li>
-                            <li>Completed tasks - I didn’t want to get rid of the completed tasks right away, in case you need to go back and review something. This is why they are muted but not overwhelmingly so, or gotten rid of entirely. In a fully developed version, I imagine a feature in the three-dot menu next to the task list title that would allow clearing of completed tasks</li>
+                            <li>Completed tasks - I didn’t want to get rid of the completed tasks right away, in case you need to go back and review something. This is why they are muted but not overwhelmingly so, or gotten rid of entirely. In a fully developed version, I imagine a feature in the three-dot menu next to the task list title that would allow clearing of completed tasks.</li>
                             <li>Percent completion - lets the user know with a quick look how a task split into subtasks is progressing. This is especially useful when subtasks are hidden.</li>
                             <li>Show/hide subtasks arrow - part of hierarchical structure.</li>
                             <li>Three-dot menu - some features I would imagine in this menu button are clearing completed tasks as mentioned above and filtering tasks by your participation (i.e. show those which you are a member of) as well as basic functionality like editing the task list title and deleting it.</li>

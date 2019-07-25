@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import SectionHeader from './components/SectionHeader'
 import TextBlock from './components/TextBlock'
 import CurrentSection from './components/CurrentSection'
-// import CurrentItem from './components/CurrentItem'
+import CurrentItem from './components/CurrentItem'
 import Project from './components/Project'
 import Link from './components/Link'
 
@@ -17,11 +17,22 @@ class App extends Component {
                     <SectionHeader value={'Hey, I’m John'} />
 
                     <TextBlock>
-                        <p id='first-paragraph'>I like to design & develop websites and web applications. I particularly enjoy front-end development as well as working on productivity and project management-type tools. I’m also interested in exploring UI/UX and design systems.</p>
-                        <p>I’m in my third year studying computer science and Spanish at the University of Virginia.</p>
+                        <p id='first-paragraph'>I like to design & build software. I particularly enjoy web and front-end
+                        development as well as working on productivity and project management-type tools.</p>
+                        <p>I’m also interested in exploring UI and design systems, as well as product management - what I
+                        enjoy most in software development is collaborating with others to define use cases and features,
+                        and have really enjoyed designing and building my own products - I would love the chance to pursue
+                        product management at a professional level.</p>
+                        <p>I’m a rising fourth year studying computer science and Spanish at the University of Virginia
+                        and plan to graduate in May 2020.</p>
                     </TextBlock>
 
-                    <CurrentSection />
+                    <CurrentSection>
+                        <CurrentItem emoji={'👷'}
+                        activity={'interning at Amazon in Seattle, WA'} />
+                        <CurrentItem emoji={'📚'}
+                        activity={'learning React (this site is a React SPA!)'} />
+                    </CurrentSection>
                 </div>
 
                 <div className='all-projects'>
@@ -36,7 +47,7 @@ class App extends Component {
                     <Project
                     {...this.props.throwwProps}>
                         <p>A tool for managing sources of inspiration for web development projects.</p>
-                        <p>I’m currently building Throww and hoping to launch this fall. Click for more details on the concept, the design, and the current stage of development.</p>
+                        <p>I’ve taken some time off from Throww, but you can click for more details on the concept, the design, and the current stage of development.</p>
                     </Project>
 
                     <Project
@@ -59,7 +70,7 @@ class App extends Component {
 
                     <Project
                     name='Macsha'>
-                        <p>This past summer, I interned in Barcelona, Spain with&nbsp;
+                        <p>Last summer, I interned in Barcelona, Spain with&nbsp;
                         <a href='http://www.macsha.com' target='_blank' rel='noopener noreferrer'>Macsha</a>
                         , a company that develops timing products for various types of sporting events. I developed
                         a C# application using Windows Forms that reads and handles the results of a race in real-time and
