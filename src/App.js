@@ -19,10 +19,10 @@ class App extends Component {
                     <TextBlock>
                         <p id='first-paragraph'>I like to design & build software. I particularly enjoy web and front-end
                         development as well as working on productivity and project management-type tools.</p>
-                        <p>I’m also interested in exploring UI and design systems, as well as product management - what I
+                        <p>I’m also interested in exploring design systems, as well as product management - what I
                         enjoy most in software development is collaborating with others to define use cases and features,
                         and have really enjoyed designing and building my own products - I would love the chance to pursue
-                        product management at a professional level.</p>
+                        product management after college.</p>
                         <p>I’m a rising fourth year studying computer science and Spanish at the University of Virginia
                         and plan to graduate in May 2020.</p>
                     </TextBlock>
