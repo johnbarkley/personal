@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "acorn": "^6.3.0",
-    "ajv": "^6.10.2",
+    "ajv": "^6.12.3",
     "lodash": "^4.17.15",
     "merge": "^1.2.1",
     "react": "^16.9.0",
